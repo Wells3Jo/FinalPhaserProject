@@ -7,8 +7,10 @@ var gameSettings = {
 var config = {
     width: 1280,
     height: 720,
+    title: "Kill the Necromancer!",
+    parent: "GameContainer",
     backgroundColor: 0x000000,
-    scene: [MenuScene, GameScene],
+    scene: [GameScene],
   // 1.1 set the physics to arcade
   physics: {
     default: "arcade",
