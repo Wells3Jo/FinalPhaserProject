@@ -29,17 +29,21 @@ class MenuScene extends Phaser.Scene {
       //Menu interact
       const interact = this.add.image(500,300,"menuInteract");
       interact.scale = 2;
-      let playBtn = this.add.image(500,300,"playButton").scale = 2;
+      this.add.image(500,300,"playButton").scale = 2;
       this.add.text(480, 290, 'Play');
-      playBtn.setInteractive();
+      
+      //Adds a player controller to the scene
+      this.player = this.physics.add.existing(new Player(this, 100, 100));
+      this.player.body.allowGravity = true;
+      this.player.setMaxVelocity(0, 200);
+      this.input.manager.enabled = true;
 
-      playBtn.on('pointerdown', () => {
-        playBtn.setPosition(
-                Phaser.Math.Between(100, 700),
-                Phaser.Math.Between(100, 500)
-            );
-      });
+      this.input.once('pointerdown', function () {
 
+          this.scene.start('sceneB');
+          //music.stop();
+
+      }, this);
     }
 
     update() {

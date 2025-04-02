@@ -18,7 +18,10 @@ var config = {
     arcade:{
         debug: false
     }
-  }
+  },
+  input: {
+    queue: true
+  },
 }
 
 
