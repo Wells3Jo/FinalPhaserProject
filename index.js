@@ -5,12 +5,13 @@ var gameSettings = {
     playerDefense: 1,
 }
 var config = {
-    width: 1280,
-    height: 720,
-    title: "Kill the Necromancer!",
+    width: 1024,
+    height: 576,
+    title: "Slay the Necromancer!",
     parent: "gameContainer",
     backgroundColor: 0x000000,
-    scene: [MenuScene],
+    scene: [MenuScene, GameScene],
+    pixelArt: true,
   // 1.1 set the physics to arcade
   physics: {
     default: "arcade",
