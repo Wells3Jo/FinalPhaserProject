@@ -10,7 +10,7 @@ var config = {
     title: "Kill the Necromancer!",
     parent: "GameContainer",
     backgroundColor: 0x000000,
-    scene: [GameScene],
+    scene: [MenuScene],
   // 1.1 set the physics to arcade
   physics: {
     default: "arcade",

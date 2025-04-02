@@ -20,3 +20,11 @@ class GameScene extends Phaser.Scene {
 
 
 }
+
+const config = {
+    type: Phaser.AUTO,
+    parent: 'phaser-example',
+    width: 1280,
+    height: 720,
+    scene: GameScene,
+};
