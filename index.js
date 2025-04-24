@@ -16,7 +16,11 @@ var config = {
   physics: {
     default: "arcade",
     arcade:{
-        debug: false
+        debug: true,
+        gravity: {
+          x: 0,
+          y: 300
+        },
     }
   },
   input: {

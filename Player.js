@@ -42,13 +42,15 @@ class Player extends Phaser.Scene {
 		const roll = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SHIFT);
 
 		// player
-		const player = this.physics.add.sprite(59, 536, "_Idle", 0);
+		const player = this.physics.add.sprite(40, 40, "_Idle", 0);
 		player.name = "player";
-		player.setInteractive(new Phaser.Geom.Rectangle(0, 0, 20, 38), Phaser.Geom.Rectangle.Contains);
+		player.setInteractive(new Phaser.Geom.Rectangle(1, 5, 20, 38), Phaser.Geom.Rectangle.Contains);
 		player.body.collideWorldBounds = true;
-		player.body.setSize(20, 38, false);
+		player.body.onWorldBounds = true;
+		player.body.setSize(120, 80, false);
 		player.play("player_Idle");
 
+		this.player = player;
 		this.attack = attack;
 		this.left = left;
 		this.right = right;
@@ -59,6 +61,8 @@ class Player extends Phaser.Scene {
 		this.events.emit("scene-awake");
 	}
 
+	/** @type {Phaser.Physics.Arcade.Sprite} */
+	player;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	attack;
 	/** @type {Phaser.Input.Keyboard.Key} */
@@ -82,13 +86,16 @@ class Player extends Phaser.Scene {
 	}
 
 	update() {
+		const isGrounded = this.player.body.touching.down;
 
-		/*this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE_KEY + "player_Attack", () => {
-		this.player.play("player_Idle");
-		})*/
+
+
 		if (this.right.isDown){
 			this.player.setVelocityX(150);
 			this.player.play("player_Run");
+			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE + "player_Run", () => {
+				this.player.play("player_Run");
+			})
 			this.player.setFlipX(false);
 		}
 		else if (this.left.isDown) {
@@ -98,20 +105,31 @@ class Player extends Phaser.Scene {
 		}
 		else {
 			this.player.setVelocityX(0);
-		
+			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE + "player_Run", () => {
+				this.player.play("player_Idle");
+			})
+		}
+		/*if (isGrounded){
+			if (this.up.isDown){
+				this.player.setVelocityY(-150);
+			}
+		}*/
+
+		if (this.roll.isDown && this.right.isDown) {
+			this.player.play("player_Roll");
+			this.player.x = this.player.x + 1;
+		} else if (this.roll.isDown && this.left.isDown) {
+			this.player.play("player_Roll");
+			this.player.x = this.player.x + -1;
 		}
 
-		/*if (this.up.isDown){
-			this.player.setVelocityY(-150);
-		} else {
-			this.player.setVelocityY(175);
-		}*/
-
-		/*if (this.attack.isDown) {
+		if (this.attack.isDown) {
 			this.player.play("player_Attack");
 		} else {
-			this.player.play("player_Idle");
-		}*/
+			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE_KEY + "player_Attack", () => {
+				this.player.play("player_Idle");
+			})
+		}
 	}
 	/* END-USER-CODE */
 }

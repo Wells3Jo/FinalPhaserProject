@@ -10,8 +10,9 @@
         ],
         "createMethodName": "editorCreate",
         "sceneKey": "Player",
-        "borderWidth": 1024,
-        "borderHeight": 576
+        "borderX": -20,
+        "borderWidth": 120,
+        "borderHeight": 80
     },
     "displayList": [
         {
@@ -19,21 +20,25 @@
             "id": "a96646c9-2022-435b-8e73-f490f6fea8cf",
             "label": "player",
             "useGameObjectName": true,
+            "scope": "CLASS",
             "hitArea.shape": "RECTANGLE",
+            "hitArea.x": 1,
+            "hitArea.y": 5,
             "hitArea.width": 20,
             "hitArea.height": 38,
             "texture": {
                 "key": "_Idle",
                 "frame": 0
             },
-            "x": 59,
-            "y": 536,
+            "x": 40,
+            "y": 40,
             "animationPlayMethod": 1,
             "animationKey": "player_Idle",
             "animationFrameRate": 60,
             "collideWorldBounds": true,
-            "body.width": 20,
-            "body.height": 38
+            "onWorldBounds": true,
+            "body.width": 120,
+            "body.height": 80
         }
     ],
     "plainObjects": [
