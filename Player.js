@@ -1,6 +1,7 @@
 
 // You can write more code here
-
+	let isRunning = true;
+	let isRolling = true;
 /* START OF COMPILED CODE */
 
 class Player extends Phaser.Scene {
@@ -9,14 +10,14 @@ class Player extends Phaser.Scene {
 		super("Player");
 
 		/* START-USER-CTR-CODE */
-
+		
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 
 	/** @returns {void} */
 	preload() {
-
+	
 		this.load.pack("player-asset-pack", "assets/images/Player/player-asset-pack.json");
 	}
 
@@ -76,38 +77,78 @@ class Player extends Phaser.Scene {
 	/** @type {Phaser.Input.Keyboard.Key} */
 	roll;
 
-	/* START-USER-CODE */
 
+
+	/* START-USER-CODE */
+	
 	// Write your code here
 	create() {
 
-
+		
 		this.editorCreate();
 	}
 
 	update() {
 		const isGrounded = this.player.body.touching.down;
 
-
+		if (this.player.body.velocity.x == 0) {
+			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+				this.player.play("player_Idle");
+			})
+		}
 
 		if (this.right.isDown){
-			this.player.setVelocityX(150);
-			this.player.play("player_Run");
-			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE + "player_Run", () => {
+			if (isRunning) {
+				this.player.setVelocityX(150);
 				this.player.play("player_Run");
+				this.player.setFlipX(false);
+				isRunning = false;
+			} else 
+			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+				isRunning = true;
 			})
-			this.player.setFlipX(false);
+
 		}
 		else if (this.left.isDown) {
-			this.player.setVelocityX(-150);
-			this.player.play("player_Run");
-			this.player.setFlipX(true);
+			if (isRunning) {
+				this.player.setVelocityX(-150);
+				this.player.play("player_Run");
+				this.player.setFlipX(true);
+				isRunning = false;
+			} else 
+			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+				isRunning = true;
+			})
 		}
 		else {
 			this.player.setVelocityX(0);
-			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE + "player_Run", () => {
-				this.player.play("player_Idle");
-			})
+			this.player.play("player_Idle");
+			isRunning = true;
+		}
+
+		if (this.roll.isDown && this.right.isDown){
+			if (isRolling) {
+				this.player.x = this.player.x + 1;
+				this.player.play("player_Roll");
+				this.player.setFlipX(false);
+				isRolling = false;
+			} else {
+			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+				isRolling = true;
+			});
+			}
+		}
+		else if (this.roll.isDown && this.left.isDown){
+			if (isRolling) {
+				this.player.x = this.player.x + -1;
+				this.player.play("player_Roll");
+				this.player.setFlipX(true);
+				isRolling = false;
+			} else {
+			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+				isRolling = true;
+			});
+			}
 		}
 		/*if (isGrounded){
 			if (this.up.isDown){
@@ -115,13 +156,7 @@ class Player extends Phaser.Scene {
 			}
 		}*/
 
-		if (this.roll.isDown && this.right.isDown) {
-			this.player.play("player_Roll");
-			this.player.x = this.player.x + 1;
-		} else if (this.roll.isDown && this.left.isDown) {
-			this.player.play("player_Roll");
-			this.player.x = this.player.x + -1;
-		}
+
 
 		if (this.attack.isDown) {
 			this.player.play("player_Attack");
@@ -130,6 +165,7 @@ class Player extends Phaser.Scene {
 				this.player.play("player_Idle");
 			})
 		}
+
 	}
 	/* END-USER-CODE */
 }
