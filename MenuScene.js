@@ -26,6 +26,8 @@ class MenuScene extends Phaser.Scene {
       music.play();
       this.sound.pauseOnBlur = true;
 
+      //Menu Title
+      this.add.text(500, 500, 'Slay the Necromancer!');
       //Menu interact
       const interact = this.add.image(500,300,"menuInteract");
       interact.scale = 2;
@@ -40,10 +42,12 @@ class MenuScene extends Phaser.Scene {
 
       this.input.once('pointerdown', function () {
 
-          this.scene.start('sceneB');
+          this.scene.start('GameScene');
           //music.stop();
 
       }, this);
+
+
     }
 
     update() {

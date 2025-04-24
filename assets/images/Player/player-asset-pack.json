@@ -1,0 +1,71 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/Player/_Attack.png",
+                "frameConfig": {
+                    "frameWidth": 120,
+                    "frameHeight": 80,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "_Attack"
+            },
+            {
+                "url": "assets/images/Player/_Idle.png",
+                "frameConfig": {
+                    "frameWidth": 120,
+                    "frameHeight": 80,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "_Idle"
+            },
+            {
+                "url": "assets/images/Player/_Roll.png",
+                "frameConfig": {
+                    "frameWidth": 120,
+                    "frameHeight": 80,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "_Roll"
+            },
+            {
+                "url": "assets/images/Player/_Run.png",
+                "frameConfig": {
+                    "frameWidth": 120,
+                    "frameHeight": 80,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "_Run"
+            },
+            {
+                "url": "player_animations.json",
+                "type": "animation",
+                "key": "player_animations"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
+    }
+}

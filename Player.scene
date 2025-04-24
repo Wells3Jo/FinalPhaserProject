@@ -1,0 +1,82 @@
+{
+    "id": "6eac9340-1979-44f7-83c5-1f9006bee25a",
+    "sceneType": "SCENE",
+    "settings": {
+        "snapWidth": 20,
+        "snapHeight": 38,
+        "displayName": "Player",
+        "preloadPackFiles": [
+            "FinalPhaserProjectJoelWells/assets/images/Player/player-asset-pack.json"
+        ],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Player",
+        "borderWidth": 1024,
+        "borderHeight": 576
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "a96646c9-2022-435b-8e73-f490f6fea8cf",
+            "label": "player",
+            "useGameObjectName": true,
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 20,
+            "hitArea.height": 38,
+            "texture": {
+                "key": "_Idle",
+                "frame": 0
+            },
+            "x": 59,
+            "y": 536,
+            "animationPlayMethod": 1,
+            "animationKey": "player_Idle",
+            "animationFrameRate": 60,
+            "collideWorldBounds": true,
+            "body.width": 20,
+            "body.height": 38
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "5b7a00b6-5be2-4b77-9928-ceeb56bfc615",
+            "type": "Keyboard.Key",
+            "label": "attack"
+        },
+        {
+            "id": "31caf499-ae20-4061-b951-e928b691edf6",
+            "type": "Keyboard.Key",
+            "label": "left",
+            "keyCode": "A"
+        },
+        {
+            "id": "72b1d8e4-db51-444d-91ae-9b38f0f7150a",
+            "type": "Keyboard.Key",
+            "label": "right",
+            "keyCode": "D"
+        },
+        {
+            "id": "8bf34c5b-1656-45e7-9dcf-ab85c0c90af7",
+            "type": "Keyboard.Key",
+            "label": "up",
+            "keyCode": "W"
+        },
+        {
+            "id": "447f0718-fc68-40a1-90d6-3d374ec29d22",
+            "type": "Keyboard.Key",
+            "label": "down",
+            "keyCode": "S"
+        },
+        {
+            "id": "dc3065be-db4d-40f5-afd4-23420afdb4c6",
+            "type": "Keyboard.Key",
+            "label": "roll",
+            "keyCode": "SHIFT"
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
