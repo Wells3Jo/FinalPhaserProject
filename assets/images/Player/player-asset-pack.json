@@ -15,6 +15,19 @@
                 "key": "_Attack"
             },
             {
+                "url": "assets/images/Player/_Fall.png",
+                "frameConfig": {
+                    "frameWidth": 120,
+                    "frameHeight": 80,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "_Fall"
+            },
+            {
                 "url": "assets/images/Player/_Idle.png",
                 "frameConfig": {
                     "frameWidth": 120,
@@ -26,6 +39,19 @@
                 },
                 "type": "spritesheet",
                 "key": "_Idle"
+            },
+            {
+                "url": "assets/images/Player/_Jump.png",
+                "frameConfig": {
+                    "frameWidth": 120,
+                    "frameHeight": 80,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "_Jump"
             },
             {
                 "url": "assets/images/Player/_Roll.png",

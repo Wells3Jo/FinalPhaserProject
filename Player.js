@@ -4,6 +4,8 @@
 	let isRolling = true;
 	let isJumping = true;
 	let isAttacking = true;
+	let isGrounded = true;
+	let isFalling = true;
 /* START OF COMPILED CODE */
 
 class Player extends Phaser.Scene {
@@ -91,7 +93,7 @@ class Player extends Phaser.Scene {
 	}
 
 	update() {
-		const isGrounded = this.player.body.touching.down;
+		
 
 		if (this.player.body.velocity.x == 0) {
 			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
@@ -152,16 +154,33 @@ class Player extends Phaser.Scene {
 			});
 			}
 		}
-		/*if (isGrounded){
+		
+		if (isGrounded){
 			if (this.up.isDown){
 				this.player.setVelocityY(-150);
+				this.player.play("player_Jump");
 			}
-		}*/
+		}
+
+		
+			if (this.player.body.velocity.y > 0) {
+				this.player.play("player_Fall")
+				isFalling = true;
+			} else {
+				this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+				this.player.play("player_Idle")
+				isFalling = false;
+			});
+			}
+		
+		
+
 
 
 	if (isAttacking) {
 		if (this.attack.isDown) {
 			this.player.play("player_Attack");
+
 
 		} 
 	}
