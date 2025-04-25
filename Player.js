@@ -2,6 +2,8 @@
 // You can write more code here
 	let isRunning = true;
 	let isRolling = true;
+	let isJumping = true;
+	let isAttacking = true;
 /* START OF COMPILED CODE */
 
 class Player extends Phaser.Scene {
@@ -122,7 +124,7 @@ class Player extends Phaser.Scene {
 		}
 		else {
 			this.player.setVelocityX(0);
-			this.player.play("player_Idle");
+			
 			isRunning = true;
 		}
 
@@ -137,7 +139,7 @@ class Player extends Phaser.Scene {
 				isRolling = true;
 			});
 			}
-		}
+		} 
 		else if (this.roll.isDown && this.left.isDown){
 			if (isRolling) {
 				this.player.x = this.player.x + -1;
@@ -157,14 +159,13 @@ class Player extends Phaser.Scene {
 		}*/
 
 
-
+	if (isAttacking) {
 		if (this.attack.isDown) {
 			this.player.play("player_Attack");
-		} else {
-			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE_KEY + "player_Attack", () => {
-				this.player.play("player_Idle");
-			})
-		}
+
+		} 
+	}
+
 
 	}
 	/* END-USER-CODE */
