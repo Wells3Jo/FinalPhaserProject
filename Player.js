@@ -155,7 +155,7 @@ class Player extends Phaser.Scene {
 			}
 		}
 		
-		if (isGrounded){
+		if (this.player.body.onFloor()){
 			if (this.up.isDown){
 				this.player.setVelocityY(-150);
 				this.player.play("player_Jump");
@@ -163,27 +163,26 @@ class Player extends Phaser.Scene {
 		}
 
 		
+		if (!this.player.body.onFloor()) {
 			if (this.player.body.velocity.y > 0) {
 				this.player.play("player_Fall")
-				isFalling = true;
-			} else {
-				this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-				this.player.play("player_Idle")
-				isFalling = false;
+
+			} else  {
+				this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE_KEY + "player_Fall", () => {
+				this.player.play("player_Idle");
+
 			});
 			}
+		}
+
 		
-		
-
-
-
-	if (isAttacking) {
-		if (this.attack.isDown) {
+	
+		if (this.attack.isDown && this.player.body.velocity.y <= 0) {
 			this.player.play("player_Attack");
 
 
 		} 
-	}
+	
 
 
 	}
