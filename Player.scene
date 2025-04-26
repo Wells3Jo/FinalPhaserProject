@@ -22,10 +22,8 @@
             "useGameObjectName": true,
             "scope": "CLASS",
             "hitArea.shape": "RECTANGLE",
-            "hitArea.x": 1,
-            "hitArea.y": 5,
-            "hitArea.width": 20,
-            "hitArea.height": 38,
+            "hitArea.width": 120,
+            "hitArea.height": 80,
             "texture": {
                 "key": "_Idle",
                 "frame": 0
@@ -37,8 +35,10 @@
             "animationFrameRate": 60,
             "collideWorldBounds": true,
             "onWorldBounds": true,
-            "body.width": 120,
-            "body.height": 80
+            "body.width": 23,
+            "body.height": 39,
+            "body.offset.x": 44,
+            "body.offset.y": 43
         }
     ],
     "plainObjects": [
