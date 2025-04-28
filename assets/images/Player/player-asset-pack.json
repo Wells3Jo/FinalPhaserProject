@@ -80,6 +80,27 @@
                 "key": "_Run"
             },
             {
+                "url": [
+                    "assets/sounds/Player/16_human_walk_stone_3.wav"
+                ],
+                "type": "audio",
+                "key": "16_human_walk_stone_3"
+            },
+            {
+                "url": [
+                    "assets/sounds/Player/25_orc_walk_stone_1.wav"
+                ],
+                "type": "audio",
+                "key": "25_orc_walk_stone_1"
+            },
+            {
+                "url": [
+                    "assets/sounds/Player/27_sword_miss_1.wav"
+                ],
+                "type": "audio",
+                "key": "27_sword_miss_1"
+            },
+            {
                 "url": "player_animations.json",
                 "type": "animation",
                 "key": "player_animations"

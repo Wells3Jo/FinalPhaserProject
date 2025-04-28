@@ -47,7 +47,7 @@ class Player extends Phaser.Scene {
 		const roll = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SHIFT);
 
 		// player
-		const player = this.physics.add.sprite(40, 40, "_Idle", 0);
+		const player = this.physics.add.sprite(59, 342, "_Idle", 0);
 		player.name = "player";
 		player.setInteractive(new Phaser.Geom.Rectangle(0, 0, 120, 80), Phaser.Geom.Rectangle.Contains);
 		player.body.collideWorldBounds = true;
@@ -65,16 +65,6 @@ class Player extends Phaser.Scene {
 		this.roll = roll;
 
 		this.events.emit("scene-awake");
-
-
-		this.player.on(Phaser.Animations.Events.ANIMATION_UPDATE, function (anim, frame, sprite, frameKey) {
-            //  We can run our effect when we get frame0004:
-            if (frameKey === 'attack_B/frame0001')
-            {
-                this.releaseItem();
-            }
-
-        }, this);
 	}
 
 	/** @type {Phaser.Physics.Arcade.Sprite} */
@@ -99,8 +89,12 @@ class Player extends Phaser.Scene {
 
 
 		this.editorCreate();
-	}
 
+		this.playerMiss = this.sound.add("27_sword_miss_1");
+		this.playerWalk = this.sound.add("25_orc_walk_stone_1")
+
+
+	}
 	update() {
 
 
@@ -117,6 +111,11 @@ class Player extends Phaser.Scene {
 				this.player.setFlipX(false);
 				this.player.body.setOffset(44,43);
 				isRunning = false;
+				this.playerWalk.play();
+				if (this.player.body.onFloor){
+					this.playerWalk.play();
+				}
+
 			} else 
 			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
 				isRunning = true;
@@ -130,6 +129,10 @@ class Player extends Phaser.Scene {
 				this.player.setFlipX(true);
 				this.player.body.setOffset(53,43);
 				isRunning = false;
+				if (this.player.body.onFloor){
+					this.playerWalk.play();
+				}
+
 			} else 
 			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
 				isRunning = true;
@@ -141,13 +144,13 @@ class Player extends Phaser.Scene {
 			isRunning = true;
 		}
 
-		if (this.roll.isDown && this.right.isDown){
+		if (this.roll.isDown && this.right.isDown && this.player.body.onFloor()){
 			if (isRolling) {
 				this.player.x = this.player.x + 10;
 				this.player.play("player_Roll");
 				this.player.setFlipX(false);
 				isRolling = false;
-				this.player.body.enable = false;
+				//this.player.body.enable = false;
 			} else {
 			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
 				isRolling = true;
@@ -155,9 +158,9 @@ class Player extends Phaser.Scene {
 			});
 			}
 		} 
-		else if (this.roll.isDown && this.left.isDown){
+		else if (this.roll.isDown && this.left.isDown && this.player.body.onFloor()){
 			if (isRolling) {
-				this.player.x = this.player.x + -1;
+				this.player.x = this.player.x - 10;
 				this.player.play("player_Roll");
 				this.player.setFlipX(true);
 				isRolling = false;
@@ -189,10 +192,14 @@ class Player extends Phaser.Scene {
 		}
 
 
-
+		/*this.player.on("pointerdown", () => {
+			this.player.play("player_Attack");
+		});
+		*/
 		if (this.attack.isDown && this.player.body.velocity.y <= 0) {
 			this.player.play("player_Attack");
 
+			this.playerMiss.play();
 
 		} 
 

@@ -1,65 +1,50 @@
+
+// You can write more code here
+
+/* START OF COMPILED CODE */
+
 class MenuScene extends Phaser.Scene {
-    constructor() {
-      super("bootGame");
-    }
 
-    preload(){
-      //Menu Background
-      this.load.image("bg", "assets/images/MenuScene/main_background.png");
+	constructor() {
+		super("MenuScene");
 
-      //Menu music
-      this.load.audio('menuMusic', [
-        'assets/sounds/MenuScene/menuMusic.mp3'
-    ]);
+		/* START-USER-CTR-CODE */
+		// Write your code here.
+		/* END-USER-CTR-CODE */
+	}
 
-    //Menu interact
-    this.load.image("menuInteract", "assets/images/MenuScene/RectangleBox_96x96.png");
-    this.load.image("playButton", "assets/images/MenuScene/Button_52x14.png");
-    }
+	/** @returns {void} */
+	editorCreate() {
 
-    create() {
-      //Menu Background
-      this.add.image(0,0,"bg").setOrigin(0,0);
+		this.events.emit("scene-awake");
+	}
 
-      //Menu music
-      const music = this.sound.add('menuMusic');
-      music.play();
-      this.sound.pauseOnBlur = true;
+	/* START-USER-CODE */
 
-      //Menu Title
-      this.add.text(500, 500, 'Slay the Necromancer!');
-      //Menu interact
-      const interact = this.add.image(500,300,"menuInteract");
-      interact.scale = 2;
-      this.add.image(500,300,"playButton").scale = 2;
-      this.add.text(480, 290, 'Play');
-      
-      //Adds a player controller to the scene
-      this.player = this.physics.add.existing(new Player(this, 100, 100));
-      this.player.body.allowGravity = true;
-      this.player.setMaxVelocity(0, 200);
-      this.input.manager.enabled = true;
+	// Write your code here
 
-      this.input.once('pointerdown', function () {
+	create() {
 
-          this.scene.start('GameScene');
-          //music.stop();
+		this.editorCreate();
+    this.input.manager.enabled = true;
 
-      }, this);
+    this.input.once('pointerdown', function () {
 
+    this.scene.start('GameScene');
 
-    }
-
-    update() {
+    }, this);
+    //
+	}
+  update() {
     
-    }
+  }
+	/* END-USER-CODE */
 
-    playButton(){
-      
-    }
-
-
+  
 }
 
+/* END OF COMPILED CODE */
 
+// You can write more code here
+//
 

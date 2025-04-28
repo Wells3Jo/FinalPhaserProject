@@ -5,12 +5,12 @@ var gameSettings = {
     playerDefense: 1,
 }
 var config = {
-    width: 1024,
-    height: 576,
-    title: "Slay the Necromancer!",
+    width: 400,
+    height: 270,
+    title: "Fantasy Survivors",
     parent: "gameContainer",
     backgroundColor: 0x000000,
-    scene: [Player],
+    scene: [MenuScene, GameScene, Player],
     pixelArt: true,
   // 1.1 set the physics to arcade
   physics: {

@@ -1,0 +1,78 @@
+{
+    "id": "e9afacb8-bc90-409b-ac35-a682109606c6",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [
+            "FinalPhaserProjectJoelWells/asset-pack-level-1.json"
+        ],
+        "createMethodName": "editorCreate",
+        "sceneKey": "GameScene",
+        "borderWidth": 400,
+        "borderHeight": 270
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "53a12928-68cd-4dd2-9e43-26f7482f27a6",
+            "label": "background1",
+            "scope": "PUBLIC",
+            "texture": {
+                "key": "background1"
+            },
+            "x": 200,
+            "y": 133,
+            "scaleX": 0.95,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "8fc0293d-2113-4783-a147-ee8a9c9f2b6d",
+            "label": "background2",
+            "texture": {
+                "key": "background2"
+            },
+            "x": 209,
+            "y": 101,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "35109713-4b09-4757-807c-74583ab0eba8",
+            "label": "background3",
+            "texture": {
+                "key": "background3"
+            },
+            "x": 211,
+            "y": 135
+        },
+        {
+            "type": "Image",
+            "id": "aeae3212-f5f7-4d00-9678-ab223d458341",
+            "label": "background6",
+            "texture": {
+                "key": "background6"
+            },
+            "x": 235,
+            "y": 79,
+            "scaleX": 1.1
+        },
+        {
+            "type": "Image",
+            "id": "14f4873f-cbd1-4c73-8915-5d565c29900d",
+            "label": "background5",
+            "texture": {
+                "key": "background5"
+            },
+            "x": 212,
+            "y": 112,
+            "flipY": true
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

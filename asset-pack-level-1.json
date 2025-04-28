@@ -1,0 +1,56 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": {
+                    "IMG": "assets/images/background1.png"
+                },
+                "type": "texture",
+                "key": "background1"
+            },
+            {
+                "url": {
+                    "IMG": "assets/images/background2.png"
+                },
+                "type": "texture",
+                "key": "background2"
+            },
+            {
+                "url": {
+                    "IMG": "assets/images/background3.png"
+                },
+                "type": "texture",
+                "key": "background3"
+            },
+            {
+                "url": {
+                    "IMG": "assets/images/background4.png"
+                },
+                "type": "texture",
+                "key": "background4"
+            },
+            {
+                "url": {
+                    "IMG": "assets/images/background5.png"
+                },
+                "type": "texture",
+                "key": "background5"
+            },
+            {
+                "url": {
+                    "IMG": "assets/images/background6.png"
+                },
+                "type": "texture",
+                "key": "background6"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
+    }
+}
