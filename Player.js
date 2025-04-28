@@ -52,7 +52,7 @@ class Player extends Phaser.Scene {
 		player.setInteractive(new Phaser.Geom.Rectangle(0, 0, 120, 80), Phaser.Geom.Rectangle.Contains);
 		player.body.collideWorldBounds = true;
 		player.body.onWorldBounds = true;
-		player.body.setOffset(44, 43);
+		player.body.setOffset(43, 40);
 		player.body.setSize(23, 39, false);
 		player.play("player_Idle");
 
@@ -197,8 +197,9 @@ class Player extends Phaser.Scene {
 		});
 		*/
 		if (this.attack.isDown && this.player.body.velocity.y <= 0) {
-			this.player.play("player_Attack");
 
+			this.player.play("player_Attack");
+			//this.physics.add.overlap(this.sprite, this.group);
 			this.playerMiss.play();
 
 		} 

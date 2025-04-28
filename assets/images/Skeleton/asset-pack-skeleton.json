@@ -1,0 +1,97 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/Skeleton/animations-skeleton.json",
+                "type": "animation",
+                "key": "animations-skeleton"
+            },
+            {
+                "url": "assets/images/Skeleton/Skeleton Attack.png",
+                "frameConfig": {
+                    "frameWidth": 43,
+                    "frameHeight": 37,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Skeleton Attack"
+            },
+            {
+                "url": "assets/images/Skeleton/Skeleton Dead.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Skeleton Dead"
+            },
+            {
+                "url": "assets/images/Skeleton/Skeleton Hit.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Skeleton Hit"
+            },
+            {
+                "url": "assets/images/Skeleton/Skeleton Idle.png",
+                "frameConfig": {
+                    "frameWidth": 24,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Skeleton Idle"
+            },
+            {
+                "url": "assets/images/Skeleton/Skeleton React.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Skeleton React"
+            },
+            {
+                "url": "assets/images/Skeleton/Skeleton Walk.png",
+                "frameConfig": {
+                    "frameWidth": 18,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Skeleton Walk"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
+    }
+}

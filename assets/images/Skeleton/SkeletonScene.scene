@@ -1,0 +1,35 @@
+{
+    "id": "7191f707-52ac-46b6-b1c8-f0c673f9178d",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [
+            "FinalPhaserProjectJoelWells/assets/images/Skeleton/asset-pack-skeleton.json"
+        ],
+        "createMethodName": "editorCreate",
+        "sceneKey": "SkeletonScene",
+        "borderWidth": 400,
+        "borderHeight": 270
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "a809d73c-1d71-4b89-adc4-1ca4f606eaf3",
+            "label": "skeleton",
+            "scope": "CLASS",
+            "texture": {
+                "key": "Skeleton Idle",
+                "frame": 0
+            },
+            "x": 317,
+            "y": 242,
+            "flipX": true
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

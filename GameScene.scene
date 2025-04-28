@@ -19,9 +19,8 @@
             "texture": {
                 "key": "background1"
             },
-            "x": 200,
-            "y": 133,
-            "scaleX": 0.95,
+            "x": 213,
+            "y": 136,
             "scaleY": 0.7
         },
         {
@@ -31,8 +30,8 @@
             "texture": {
                 "key": "background2"
             },
-            "x": 209,
-            "y": 101,
+            "x": 213,
+            "y": 136,
             "scaleY": 0.7
         },
         {
@@ -42,8 +41,9 @@
             "texture": {
                 "key": "background3"
             },
-            "x": 211,
-            "y": 135
+            "x": 213,
+            "y": 136,
+            "scaleY": 0.7
         },
         {
             "type": "Image",
@@ -52,9 +52,9 @@
             "texture": {
                 "key": "background6"
             },
-            "x": 235,
-            "y": 79,
-            "scaleX": 1.1
+            "x": 213,
+            "y": 136,
+            "scaleY": 0.7
         },
         {
             "type": "Image",
@@ -63,8 +63,9 @@
             "texture": {
                 "key": "background5"
             },
-            "x": 212,
-            "y": 112,
+            "x": 213,
+            "y": 136,
+            "scaleY": 0.7,
             "flipY": true
         }
     ],

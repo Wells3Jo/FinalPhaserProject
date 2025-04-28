@@ -17,30 +17,30 @@ class GameScene extends Phaser.Scene {
 	preload() {
 
 		this.load.pack("asset-pack-level-1", "asset-pack-level-1.json");
-
 	}
 
 	/** @returns {void} */
 	editorCreate() {
 
 		// background1
-		const background1 = this.add.image(200, 133, "background1");
-		background1.scaleX = 0.95;
+		const background1 = this.add.image(213, 136, "background1");
 		background1.scaleY = 0.7;
 
 		// background2
-		const background2 = this.add.image(209, 101, "background2");
+		const background2 = this.add.image(213, 136, "background2");
 		background2.scaleY = 0.7;
 
 		// background3
-		this.add.image(211, 135, "background3");
+		const background3 = this.add.image(213, 136, "background3");
+		background3.scaleY = 0.7;
 
 		// background6
-		const background6 = this.add.image(235, 79, "background6");
-		background6.scaleX = 1.1;
+		const background6 = this.add.image(213, 136, "background6");
+		background6.scaleY = 0.7;
 
 		// background5
-		const background5 = this.add.image(212, 112, "background5");
+		const background5 = this.add.image(213, 136, "background5");
+		background5.scaleY = 0.7;
 		background5.flipY = true;
 
 		this.background1 = background1;
@@ -56,8 +56,12 @@ class GameScene extends Phaser.Scene {
 	// Write your code here
 
 	create() {
-        this.scene.launch("Player");
+
 		this.editorCreate();
+        const music = this.sound.add("gameMusic");
+        music.play()
+        this.scene.launch("Player");
+        this.scene.launch("SkeletonScene");
 	}
 
 	/* END-USER-CODE */

@@ -42,6 +42,13 @@
                 },
                 "type": "texture",
                 "key": "background6"
+            },
+            {
+                "url": [
+                    "assets/sounds/GameScene/gameMusic.mp3"
+                ],
+                "type": "audio",
+                "key": "gameMusic"
             }
         ]
     },

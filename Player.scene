@@ -37,8 +37,8 @@
             "onWorldBounds": true,
             "body.width": 23,
             "body.height": 39,
-            "body.offset.x": 44,
-            "body.offset.y": 43
+            "body.offset.x": 43,
+            "body.offset.y": 40
         }
     ],
     "plainObjects": [
