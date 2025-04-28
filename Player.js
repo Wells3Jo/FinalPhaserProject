@@ -199,13 +199,16 @@ class Player extends Phaser.Scene {
 		if (this.attack.isDown && this.player.body.velocity.y <= 0) {
 
 			this.player.play("player_Attack");
-			//this.physics.add.overlap(this.sprite, this.group);
+
 			this.playerMiss.play();
 
 		} 
 
+	}
 
-
+	hit() {
+		this.player.play("player_Attack");
+		this.currentHealth -= 1;
 	}
 	/* END-USER-CODE */
 }

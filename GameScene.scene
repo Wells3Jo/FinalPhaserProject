@@ -67,6 +67,14 @@
             "y": 136,
             "scaleY": 0.7,
             "flipY": true
+        },
+        {
+            "type": "Text",
+            "id": "78b8fd68-4e23-45d3-91df-85cb1136eb3b",
+            "label": "health",
+            "x": 15,
+            "y": 11,
+            "text": "Health: 20"
         }
     ],
     "plainObjects": [],

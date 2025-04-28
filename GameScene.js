@@ -43,6 +43,11 @@ class GameScene extends Phaser.Scene {
 		background5.scaleY = 0.7;
 		background5.flipY = true;
 
+		// health
+		const health = this.add.text(15, 11, "", {});
+		health.text = "Health: 20";
+		health.setStyle({  });
+
 		this.background1 = background1;
 
 		this.events.emit("scene-awake");
@@ -60,10 +65,14 @@ class GameScene extends Phaser.Scene {
 		this.editorCreate();
         const music = this.sound.add("gameMusic");
         music.play()
-        this.scene.launch("Player");
-        this.scene.launch("SkeletonScene");
+        this.player = this.scene.launch("Player");
+        this.skeleton = this.scene.launch("SkeletonScene");
+        this.physics.add.overlap(this.player, this.skeleton, this.player.hit);
 	}
 
+    update(){
+        //this.health.setText(`Health: ${this.player.currentHealth}`);
+    }
 	/* END-USER-CODE */
 }
 

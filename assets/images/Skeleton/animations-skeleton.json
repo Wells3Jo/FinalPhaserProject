@@ -1,213 +1,112 @@
 {
     "anims": [
         {
-            "key": "Skeleton Idle",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 0,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 1,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 2,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 3,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 4,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 5,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 6,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 7,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 8,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 9,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Idle",
-                    "frame": 10,
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 12,
-            "skipMissedFrames": true,
-            "repeat": -1,
-            "randomFrame": false
-        },
-        {
             "key": "Skeleton Attack",
             "type": "frame",
-            "frames": [
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 16,
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
+            "frames": [],
             "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1,
             "randomFrame": false
         },
         {
-            "key": "Skeleton Attack_1",
+            "key": "SkeletonAttack",
+            "type": "frame",
+            "frames": [],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "skeletonIdle",
             "type": "frame",
             "frames": [
                 {
-                    "key": "Skeleton Attack",
+                    "key": "Idle",
                     "frame": 0,
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "Skeleton Attack",
+                    "key": "Idle",
                     "frame": 1,
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "Skeleton Attack",
+                    "key": "Idle",
                     "frame": 2,
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "Skeleton Attack",
+                    "key": "Idle",
+                    "frame": 3,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "skeletonAttack",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Attack",
+                    "frame": 0,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Attack",
+                    "frame": 1,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Attack",
+                    "frame": 2,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Attack",
                     "frame": 3,
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "Skeleton Attack",
+                    "key": "Attack",
                     "frame": 4,
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "Skeleton Attack",
+                    "key": "Attack",
                     "frame": 5,
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "Skeleton Attack",
+                    "key": "Attack",
                     "frame": 6,
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "Skeleton Attack",
+                    "key": "Attack",
                     "frame": 7,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 8,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 9,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 10,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 11,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 12,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 13,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 14,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 15,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 16,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "Skeleton Attack",
-                    "frame": 17,
                     "duration": 0,
                     "keyframe": false
                 }
             ],
-            "frameRate": 12,
+            "frameRate": 24,
             "skipMissedFrames": true,
-            "repeat": -1,
             "randomFrame": false
         }
     ],

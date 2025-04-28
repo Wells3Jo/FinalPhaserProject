@@ -7,20 +7,20 @@
                 "key": "animations-skeleton"
             },
             {
-                "url": "assets/images/Skeleton/Skeleton Attack.png",
+                "url": "assets/images/Skeleton/Attack.png",
                 "frameConfig": {
-                    "frameWidth": 43,
-                    "frameHeight": 37,
+                    "frameWidth": 150,
+                    "frameHeight": 150,
                     "startFrame": 0,
                     "endFrame": -1,
                     "spacing": 0,
                     "margin": 0
                 },
                 "type": "spritesheet",
-                "key": "Skeleton Attack"
+                "key": "Attack"
             },
             {
-                "url": "assets/images/Skeleton/Skeleton Dead.png",
+                "url": "assets/images/Skeleton/Death.png",
                 "frameConfig": {
                     "frameWidth": 32,
                     "frameHeight": 32,
@@ -30,10 +30,23 @@
                     "margin": 0
                 },
                 "type": "spritesheet",
-                "key": "Skeleton Dead"
+                "key": "Death"
             },
             {
-                "url": "assets/images/Skeleton/Skeleton Hit.png",
+                "url": "assets/images/Skeleton/Idle.png",
+                "frameConfig": {
+                    "frameWidth": 150,
+                    "frameHeight": 150,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Idle"
+            },
+            {
+                "url": "assets/images/Skeleton/Shield.png",
                 "frameConfig": {
                     "frameWidth": 32,
                     "frameHeight": 32,
@@ -43,23 +56,10 @@
                     "margin": 0
                 },
                 "type": "spritesheet",
-                "key": "Skeleton Hit"
+                "key": "Shield"
             },
             {
-                "url": "assets/images/Skeleton/Skeleton Idle.png",
-                "frameConfig": {
-                    "frameWidth": 24,
-                    "frameHeight": 32,
-                    "startFrame": 0,
-                    "endFrame": -1,
-                    "spacing": 0,
-                    "margin": 0
-                },
-                "type": "spritesheet",
-                "key": "Skeleton Idle"
-            },
-            {
-                "url": "assets/images/Skeleton/Skeleton React.png",
+                "url": "assets/images/Skeleton/Take Hit.png",
                 "frameConfig": {
                     "frameWidth": 32,
                     "frameHeight": 32,
@@ -69,20 +69,20 @@
                     "margin": 0
                 },
                 "type": "spritesheet",
-                "key": "Skeleton React"
+                "key": "Take Hit"
             },
             {
-                "url": "assets/images/Skeleton/Skeleton Walk.png",
+                "url": "assets/images/Skeleton/Walk.png",
                 "frameConfig": {
-                    "frameWidth": 18,
-                    "frameHeight": 32,
+                    "frameWidth": 150,
+                    "frameHeight": 150,
                     "startFrame": 0,
                     "endFrame": -1,
                     "spacing": 0,
                     "margin": 0
                 },
                 "type": "spritesheet",
-                "key": "Skeleton Walk"
+                "key": "Walk"
             }
         ]
     },

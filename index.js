@@ -10,7 +10,7 @@ var config = {
     title: "Fantasy Survivors",
     parent: "gameContainer",
     backgroundColor: 0x000000,
-    scene: [MenuScene, GameScene, Player],
+    scene: [MenuScene, GameScene, Player, SkeletonScene],
     pixelArt: true,
   // 1.1 set the physics to arcade
   physics: {
@@ -30,5 +30,5 @@ var config = {
 
 
 
-var game = new Phaser.Game(config);
+const game = new Phaser.Game(config);
 
