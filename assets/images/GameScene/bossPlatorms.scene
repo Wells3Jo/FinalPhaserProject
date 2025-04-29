@@ -13,6 +13,9 @@
             "type": "ArcadeImage",
             "id": "a87c2459-2b81-474e-843b-48e7c76b7f40",
             "label": "ground162",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 16,
+            "hitArea.height": 16,
             "texture": {
                 "key": "ground",
                 "frame": 162
@@ -28,6 +31,9 @@
             "type": "ArcadeImage",
             "id": "f6e103f8-2b44-49ee-8748-ed6b50da6b06",
             "label": "ground163",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 16,
+            "hitArea.height": 16,
             "texture": {
                 "key": "ground",
                 "frame": 163
@@ -43,6 +49,9 @@
             "type": "ArcadeImage",
             "id": "81de3e87-a33b-4866-b456-308e868a92f5",
             "label": "ground164",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 16,
+            "hitArea.height": 16,
             "texture": {
                 "key": "ground",
                 "frame": 164
@@ -57,6 +66,9 @@
             "type": "ArcadeImage",
             "id": "433dccdc-a812-4a9d-a498-33754138d02b",
             "label": "ground165",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 16,
+            "hitArea.height": 16,
             "texture": {
                 "key": "ground",
                 "frame": 165
@@ -71,6 +83,9 @@
             "type": "ArcadeImage",
             "id": "118ee96c-5107-4130-8dec-3b48823c8e85",
             "label": "ground170",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 16,
+            "hitArea.height": 16,
             "texture": {
                 "key": "ground",
                 "frame": 170

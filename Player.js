@@ -7,8 +7,9 @@
 	let isFalling = true;
 	let maxHealth = 20;
 	let currentHealth = maxHealth;
-	
+
 /* START OF COMPILED CODE */
+
 class Player extends Phaser.Scene {
 
 	constructor() {
@@ -48,7 +49,7 @@ class Player extends Phaser.Scene {
 		const roll = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SHIFT);
 
 		// player
-		const player = this.physics.add.sprite(59, 342, "_Idle", 0);
+		const player = this.physics.add.sprite(39, 230, "_Idle", 0);
 		player.name = "player";
 		player.setInteractive(new Phaser.Geom.Rectangle(0, 0, 120, 80), Phaser.Geom.Rectangle.Contains);
 		player.body.collideWorldBounds = true;
@@ -56,11 +57,6 @@ class Player extends Phaser.Scene {
 		player.body.setOffset(43, 40);
 		player.body.setSize(23, 39, false);
 		player.play("player_Idle");
-
-		// health
-		let health = this.add.text(12, 4, "", {});
-		health.text = "Health: 20";
-		health.setStyle({ "fontSize": "10" });
 
 		this.player = player;
 		this.attack = attack;

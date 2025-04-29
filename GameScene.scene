@@ -4,7 +4,10 @@
     "settings": {
         "preloadPackFiles": [
             "FinalPhaserProjectJoelWells/asset-pack-level-1.json",
-            "FinalPhaserProjectJoelWells/assets/images/GameScene/asset-pack-platform.json"
+            "FinalPhaserProjectJoelWells/assets/images/GameScene/asset-pack-platform.json",
+            "FinalPhaserProjectJoelWells/assets/images/Necromancer/asset-pack-necromancer.json",
+            "FinalPhaserProjectJoelWells/assets/images/Player/player-asset-pack.json",
+            "FinalPhaserProjectJoelWells/assets/images/Skeleton/asset-pack-skeleton.json"
         ],
         "createMethodName": "editorCreate",
         "sceneKey": "GameScene",
@@ -68,9 +71,251 @@
             "y": 136,
             "scaleY": 0.7,
             "flipY": true
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "f9b04d5e-8d53-4d4b-a511-991e4b7fa20f",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform",
+            "scope": "CLASS",
+            "x": 101,
+            "y": 248,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "ad22214c-db83-4679-a5cd-1ad1fe2775d6",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform_1",
+            "scope": "CLASS",
+            "x": 188,
+            "y": 238,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "2c000bef-8baa-4841-8a6b-0578a2440248",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform_2",
+            "scope": "CLASS",
+            "x": 170,
+            "y": 160,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "c67a4137-ce38-4090-8b64-7521790786f9",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform_3",
+            "scope": "CLASS",
+            "x": 262,
+            "y": 221,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "2c332390-4282-45ef-b511-6137c7383d6c",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform_4",
+            "scope": "CLASS",
+            "x": 257,
+            "y": 168,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "b8f7cac6-7b1d-45d0-b0fb-d90d2ca0c7b6",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform_5",
+            "scope": "CLASS",
+            "x": 338,
+            "y": 177,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "3ad38987-9eb6-4da8-9c58-7ba76b24f2c5",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform_6",
+            "scope": "CLASS",
+            "x": 336,
+            "y": 208,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "7fb6b983-1357-4249-9b6b-41b94cf787ab",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform_7",
+            "scope": "CLASS",
+            "x": 77,
+            "y": 149,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "5db35eb7-895e-4c38-bdd9-6050a67b0546",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform_8",
+            "scope": "CLASS",
+            "x": 9,
+            "y": 129,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "8d655d6d-c2b7-4ec9-a0bb-c61372758ff5",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform_9",
+            "scope": "CLASS",
+            "x": 88,
+            "y": 109,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "8d9f63f9-e1d9-4638-9d01-1d8edb178b43",
+            "id": "ce9171f0-f6dd-416b-8cb5-c944350a7b69",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "prefabBloodyPlatform_10",
+            "scope": "CLASS",
+            "x": 170,
+            "y": 101,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Text",
+            "id": "1c6be23e-2ddd-48b4-bffc-0cfe4a0df856",
+            "label": "health",
+            "x": 24,
+            "y": 16,
+            "text": "Health: 20",
+            "fontSize": "10"
+        },
+        {
+            "prefabId": "1297f90b-68ea-4579-b0ab-87795fc42712",
+            "id": "deb16e1b-fbed-4097-b0b9-fdd76fa97f3a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "prefabPlayer",
+            "scope": "CLASS",
+            "x": 60,
+            "y": 26
         }
     ],
-    "plainObjects": [],
+    "plainObjects": [
+        {
+            "id": "b3e18e0f-1264-4a97-9fa7-c83d7d8c6c9a",
+            "type": "Collider",
+            "label": "playerWithPlatformsCollider",
+            "scope": "LOCAL",
+            "object1": "prefabPlayer",
+            "object2": "prefabBloodyPlatform",
+            "callbackContext": " "
+        },
+        {
+            "id": "25f0f4f5-1e4f-46b4-b2a8-4e7fc95ef430",
+            "type": "Keyboard.Key",
+            "label": "attack"
+        },
+        {
+            "id": "f24f78da-a3a0-44ac-aba2-8b0cdaa0bc53",
+            "type": "Keyboard.Key",
+            "label": "left",
+            "keyCode": "A"
+        },
+        {
+            "id": "1e467824-e70f-470c-97a2-d54b98b4d240",
+            "type": "Keyboard.Key",
+            "label": "right",
+            "keyCode": "D"
+        },
+        {
+            "id": "5d9146e5-038a-49f2-9026-8613d5288296",
+            "type": "Keyboard.Key",
+            "label": "up",
+            "keyCode": "W"
+        },
+        {
+            "id": "45ac4904-0707-4776-b85e-202616ad827c",
+            "type": "Keyboard.Key",
+            "label": "down",
+            "keyCode": "S"
+        },
+        {
+            "id": "b3952b52-2fac-40e7-890f-35dafd24275a",
+            "type": "Keyboard.Key",
+            "label": "roll",
+            "keyCode": "SHIFT"
+        }
+    ],
     "meta": {
         "app": "Phaser Editor - Scene Editor",
         "url": "https://phaser.io/editor",

@@ -1,0 +1,52 @@
+{
+    "id": "1297f90b-68ea-4579-b0ab-87795fc42712",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderX": -20,
+        "borderWidth": 400,
+        "borderHeight": 270
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "e2dae081-643e-4564-acc6-485563ba0b9c",
+            "label": "container_1",
+            "x": 40,
+            "y": 25.97474926183879,
+            "list": [
+                {
+                    "type": "ArcadeSprite",
+                    "id": "2c896419-0b48-4b31-a7c7-c09f2fe34b19",
+                    "label": "player",
+                    "scope": "CLASS",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.width": 120,
+                    "hitArea.height": 80,
+                    "texture": {
+                        "key": "_Idle",
+                        "frame": 0
+                    },
+                    "y": 204,
+                    "animationPlayMethod": 1,
+                    "animationKey": "player_Idle",
+                    "collideWorldBounds": true,
+                    "onWorldBounds": true,
+                    "body.width": 23,
+                    "body.height": 39,
+                    "body.offset.x": 43,
+                    "body.offset.y": 41
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

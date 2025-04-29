@@ -16,6 +16,11 @@ class MenuScene extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
+		// text_1
+		const text_1 = this.add.text(110, 76, "", {});
+		text_1.text = "A = Move left\nD = Move right\nW = Jump\nSPACE = attack\nSHIFT = Roll\n\nClick to start.";
+		text_1.setStyle({  });
+
 		this.events.emit("scene-awake");
 	}
 
@@ -36,11 +41,9 @@ class MenuScene extends Phaser.Scene {
     //
 	}
   update() {
-    
+
   }
 	/* END-USER-CODE */
-
-  
 }
 
 /* END OF COMPILED CODE */

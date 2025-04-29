@@ -1,26 +1,28 @@
 {
-  "id": "bfca7445-f910-4cd0-bbca-54d24761f096",
-  "settings": {
-    "compilerOutputLanguage": "JAVA_SCRIPT",
-    "javaScriptInitFieldsInConstructor": false,
-    "javaScriptGenerateFieldDeclarations": true,
-    "exportClass": false,
-    "autoImport": false,
-    "importFileExtension": false,
-    "createMethodName": "editorCreate",
-    "compilerInsertSpaces": false,
-    "compilerTabSize": 4,
-    "borderWidth": 400,
-    "borderHeight": 270,
-    "borderX": 0,
-    "borderY": 0,
-    "sceneKey": "MenuScene"
-  },
-  "sceneType": "SCENE",
-  "displayList": [],
-  "meta": {
-    "app": "Phaser Editor 2D - Scene Editor",
-    "url": "https://phasereditor2d.com",
-    "contentType": "phasereditor2d.core.scene.SceneContentType"
-  }
+    "id": "bfca7445-f910-4cd0-bbca-54d24761f096",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "MenuScene",
+        "borderWidth": 400,
+        "borderHeight": 270
+    },
+    "displayList": [
+        {
+            "type": "Text",
+            "id": "e424f5e2-af8b-477a-a620-c7e8b320d010",
+            "label": "text_1",
+            "x": 110,
+            "y": 76,
+            "text": "A = Move left\nD = Move right\nW = Jump\nSPACE = attack\nSHIFT = Roll\n\nClick to start."
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
 }
