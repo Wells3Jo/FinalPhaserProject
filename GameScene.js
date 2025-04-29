@@ -48,6 +48,10 @@ class GameScene extends Phaser.Scene {
 		health.text = "Health: 20";
 		health.setStyle({  });
 
+		// arcadesprite_1
+		const arcadesprite_1 = this.physics.add.sprite(331, 195, "Idle", 0);
+		arcadesprite_1.body.setSize(150, 150, false);
+
 		this.background1 = background1;
 
 		this.events.emit("scene-awake");
@@ -59,7 +63,9 @@ class GameScene extends Phaser.Scene {
 	/* START-USER-CODE */
 
 	// Write your code here
-
+	preload() {
+		this.load.pack("player-asset-pack", "assets/images/Player/player-asset-pack.json");
+	}
 	create() {
 
 		this.editorCreate();
@@ -67,6 +73,7 @@ class GameScene extends Phaser.Scene {
         music.play()
         this.player = this.scene.launch("Player");
         this.skeleton = this.scene.launch("SkeletonScene");
+		this.skeleton1 = this.scene.launch("SkeletonScene");
         this.physics.add.overlap(this.player, this.skeleton, this.player.hit);
 	}
 

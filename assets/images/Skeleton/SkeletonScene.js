@@ -1,6 +1,6 @@
 
 // You can write more code here
-
+	//let isAttacking = false;
 /* START OF COMPILED CODE */
 
 class SkeletonScene extends Phaser.Scene {
@@ -24,13 +24,13 @@ class SkeletonScene extends Phaser.Scene {
 
 		// skeleton
 		const skeleton = this.physics.add.sprite(327, 197, "Idle", 0);
-		skeleton.setInteractive(new Phaser.Geom.Rectangle(39, 46, 60.3186810561808, 57.46866463808418), Phaser.Geom.Rectangle.Contains);
+		skeleton.setInteractive(new Phaser.Geom.Rectangle(40, 40, 60, 60), Phaser.Geom.Rectangle.Contains);
 		skeleton.flipX = true;
 		skeleton.body.collideWorldBounds = true;
 		skeleton.body.onWorldBounds = true;
-		skeleton.body.setOffset(75, 75);
-		skeleton.body.setSize(32, 32, false);
-		skeleton.play("SkeletonIdle");
+		skeleton.body.setOffset(50, 50);
+		skeleton.body.setSize(50, 50, false);
+		skeleton.play("skeletonIdle");
 
 		this.skeleton = skeleton;
 
@@ -47,15 +47,12 @@ class SkeletonScene extends Phaser.Scene {
 	create() {
 
 		this.editorCreate();
+		this.chooseEvent = this.time.delayedCall(Phaser.Math.Between(3000, 6000), this.chooseAction, [], this);
 	}
 
 	update() {
-		if (this.skeleton.body.velocity.x == 0) {
-			this.skeleton.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-				this.skeleton.play("skeletonIdle");
-			})
-		}
-		//this.chooseEvent = this.time.delayedCall(Phaser.Math.Between(3000, 6000), this.chooseAction, [], this);
+
+
 
 
 	}
@@ -64,21 +61,45 @@ class SkeletonScene extends Phaser.Scene {
 
 		const t = Phaser.Math.Between(0, 100);
 
-		if (t <= 10) {
+		if (t < 10) {
 			if (this.skeleton.body.velocity.x == 0) {
-
-
 					this.skeleton.play("skeletonIdle");
+					this.chooseEvent = this.time.delayedCall(Phaser.Math.Between(3000, 5000), this.chooseAction, [], this);
 
 			}
 		}
 
 
-		if (t > 10) {
-
+		else if (t < 80) {
 			this.skeleton.play("skeletonAttack");
+			this.skeleton.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+				this.skeleton.play("skeletonIdle");
+			});
 			this.chooseEvent = this.time.delayedCall(Phaser.Math.Between(3000, 6000), this.chooseAction, [], this);
 		}
+		else if (t < 90) {
+			this.skeleton.setVelocityX(150);
+			this.skeleton.setFlipX(false);
+			this.skeleton.play("skeletonWalk");
+			this.skeleton.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+				this.skeleton.setVelocityX(0);
+				this.skeleton.play("skeletonIdle");
+			});
+			this.chooseEvent = this.time.delayedCall(Phaser.Math.Between(1000, 3000), this.chooseAction, [], this);
+		}
+		else if (t < 100) {
+			this.skeleton.setFlipX(true);
+			this.skeleton.setVelocityX(-150);
+			this.skeleton.play("skeletonWalk");
+
+			this.skeleton.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+				this.skeleton.setVelocityX(0);
+				this.skeleton.play("skeletonIdle");
+			});
+			this.chooseEvent = this.time.delayedCall(Phaser.Math.Between(1000, 3000), this.chooseAction, [], this);
+		}
+
+
 
 	}
 

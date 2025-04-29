@@ -1,24 +1,6 @@
 {
     "anims": [
         {
-            "key": "Skeleton Attack",
-            "type": "frame",
-            "frames": [],
-            "frameRate": 12,
-            "skipMissedFrames": true,
-            "repeat": -1,
-            "randomFrame": false
-        },
-        {
-            "key": "SkeletonAttack",
-            "type": "frame",
-            "frames": [],
-            "frameRate": 12,
-            "skipMissedFrames": true,
-            "repeat": -1,
-            "randomFrame": false
-        },
-        {
             "key": "skeletonIdle",
             "type": "frame",
             "frames": [
@@ -47,7 +29,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1,
             "randomFrame": false
@@ -105,7 +87,41 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "yoyo": true,
+            "randomFrame": false
+        },
+        {
+            "key": "skeletonWalk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Walk",
+                    "frame": 0,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Walk",
+                    "frame": 1,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Walk",
+                    "frame": 2,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Walk",
+                    "frame": 3,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
             "skipMissedFrames": true,
             "randomFrame": false
         }
