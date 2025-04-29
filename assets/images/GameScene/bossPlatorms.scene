@@ -1,0 +1,92 @@
+{
+    "id": "53d722d6-d295-4d4d-bee2-81685e039242",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "bossPlatorms",
+        "borderWidth": 400,
+        "borderHeight": 270
+    },
+    "displayList": [
+        {
+            "type": "ArcadeImage",
+            "id": "a87c2459-2b81-474e-843b-48e7c76b7f40",
+            "label": "ground162",
+            "texture": {
+                "key": "ground",
+                "frame": 162
+            },
+            "x": 92,
+            "y": 261,
+            "allowGravity": false,
+            "collideWorldBounds": true,
+            "body.width": 16,
+            "body.height": 16
+        },
+        {
+            "type": "ArcadeImage",
+            "id": "f6e103f8-2b44-49ee-8748-ed6b50da6b06",
+            "label": "ground163",
+            "texture": {
+                "key": "ground",
+                "frame": 163
+            },
+            "x": 108,
+            "y": 261,
+            "allowGravity": false,
+            "collideWorldBounds": true,
+            "body.width": 16,
+            "body.height": 16
+        },
+        {
+            "type": "ArcadeImage",
+            "id": "81de3e87-a33b-4866-b456-308e868a92f5",
+            "label": "ground164",
+            "texture": {
+                "key": "ground",
+                "frame": 164
+            },
+            "x": 124,
+            "y": 261,
+            "collideWorldBounds": true,
+            "body.width": 16,
+            "body.height": 16
+        },
+        {
+            "type": "ArcadeImage",
+            "id": "433dccdc-a812-4a9d-a498-33754138d02b",
+            "label": "ground165",
+            "texture": {
+                "key": "ground",
+                "frame": 165
+            },
+            "x": 140,
+            "y": 261,
+            "collideWorldBounds": true,
+            "body.width": 16,
+            "body.height": 16
+        },
+        {
+            "type": "ArcadeImage",
+            "id": "118ee96c-5107-4130-8dec-3b48823c8e85",
+            "label": "ground170",
+            "texture": {
+                "key": "ground",
+                "frame": 170
+            },
+            "x": 155,
+            "y": 261,
+            "collideWorldBounds": true,
+            "body.width": 16,
+            "body.height": 16
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

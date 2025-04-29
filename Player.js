@@ -1,12 +1,14 @@
-// You can write more code hereisrunn$0
+// You can write more code here
 	let isRunnin = true;
 	let isRolling = true;
 	let isJumping = true;
 	let isAttacking = true;
 	let isGrounded = true;
 	let isFalling = true;
+	let maxHealth = 20;
+	let currentHealth = maxHealth;
+	
 /* START OF COMPILED CODE */
-
 class Player extends Phaser.Scene {
 
 	constructor() {
@@ -56,7 +58,7 @@ class Player extends Phaser.Scene {
 		player.play("player_Idle");
 
 		// health
-		const health = this.add.text(12, 4, "", {});
+		let health = this.add.text(12, 4, "", {});
 		health.text = "Health: 20";
 		health.setStyle({ "fontSize": "10" });
 
@@ -87,7 +89,6 @@ class Player extends Phaser.Scene {
 	roll;
 
 	/* START-USER-CODE */
-
 	// Write your code here
 	create() {
 
@@ -101,7 +102,7 @@ class Player extends Phaser.Scene {
 	}
 	update() {
 
-
+		//this.health.setText(`Health: ${this.currentHealth}`);
 		if (this.player.body.velocity.x == 0) {
 			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
 				this.player.play("player_Idle");
@@ -211,7 +212,6 @@ class Player extends Phaser.Scene {
 	}
 
 	hit() {
-		this.player.play("player_Attack");
 		this.currentHealth -= 1;
 	}
 	/* END-USER-CODE */

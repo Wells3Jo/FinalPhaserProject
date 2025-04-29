@@ -4,8 +4,7 @@
     "settings": {
         "preloadPackFiles": [
             "FinalPhaserProjectJoelWells/asset-pack-level-1.json",
-            "FinalPhaserProjectJoelWells/assets/images/Skeleton/asset-pack-skeleton.json",
-            "FinalPhaserProjectJoelWells/assets/images/Player/player-asset-pack.json"
+            "FinalPhaserProjectJoelWells/assets/images/GameScene/asset-pack-platform.json"
         ],
         "createMethodName": "editorCreate",
         "sceneKey": "GameScene",

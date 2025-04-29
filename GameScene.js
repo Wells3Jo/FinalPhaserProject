@@ -17,8 +17,7 @@ class GameScene extends Phaser.Scene {
 	preload() {
 
 		this.load.pack("asset-pack-level-1", "asset-pack-level-1.json");
-		this.load.pack("asset-pack-skeleton", "assets/images/Skeleton/asset-pack-skeleton.json");
-		this.load.pack("player-asset-pack", "assets/images/Player/player-asset-pack.json");
+		this.load.pack("asset-pack-platform", "assets/images/GameScene/asset-pack-platform.json");
 	}
 
 	/** @returns {void} */
