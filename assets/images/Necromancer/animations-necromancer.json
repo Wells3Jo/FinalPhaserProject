@@ -1,0 +1,528 @@
+{
+    "anims": [
+        {
+            "key": "idle_Necromancer",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 0,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 1,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 2,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 3,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 4,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 5,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 6,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 7,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "move_Necromancer",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 17,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 18,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 19,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 20,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 21,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 22,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 23,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 24,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "attack1_Necromancer",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 34,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 35,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 36,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 37,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 38,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 39,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 40,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 41,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 42,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 43,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 44,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 45,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 46,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "attack2_Necromancer",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 51,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 52,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 53,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 54,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 55,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 56,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 57,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 58,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 59,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 60,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 61,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 62,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 63,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "attack3_Necromancer",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 68,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 69,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 70,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 71,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 72,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 73,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 74,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 75,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 76,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 77,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 78,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 79,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 80,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 81,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 82,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 83,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 84,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "hit_Necromancer",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 85,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 86,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 87,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 88,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 89,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "death_Necromancer",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 102,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 103,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 104,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 105,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 106,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 107,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 108,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 109,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 110,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Necromancer_creativekind-Sheet",
+                    "frame": 111,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    },
+    "settings": {
+        "sourceLang": "JAVA_SCRIPT",
+        "esModule": false,
+        "generateCode": false
+    }
+}

@@ -17,6 +17,8 @@ class GameScene extends Phaser.Scene {
 	preload() {
 
 		this.load.pack("asset-pack-level-1", "asset-pack-level-1.json");
+		this.load.pack("asset-pack-skeleton", "assets/images/Skeleton/asset-pack-skeleton.json");
+		this.load.pack("player-asset-pack", "assets/images/Player/player-asset-pack.json");
 	}
 
 	/** @returns {void} */
@@ -43,15 +45,6 @@ class GameScene extends Phaser.Scene {
 		background5.scaleY = 0.7;
 		background5.flipY = true;
 
-		// health
-		const health = this.add.text(15, 11, "", {});
-		health.text = "Health: 20";
-		health.setStyle({  });
-
-		// arcadesprite_1
-		const arcadesprite_1 = this.physics.add.sprite(331, 195, "Idle", 0);
-		arcadesprite_1.body.setSize(150, 150, false);
-
 		this.background1 = background1;
 
 		this.events.emit("scene-awake");
@@ -63,17 +56,19 @@ class GameScene extends Phaser.Scene {
 	/* START-USER-CODE */
 
 	// Write your code here
-	preload() {
-		this.load.pack("player-asset-pack", "assets/images/Player/player-asset-pack.json");
-	}
+
 	create() {
 
 		this.editorCreate();
+
+ 		//this.cameras.main.setSize(400, 270);
         const music = this.sound.add("gameMusic");
         music.play()
         this.player = this.scene.launch("Player");
-        this.skeleton = this.scene.launch("SkeletonScene");
-		this.skeleton1 = this.scene.launch("SkeletonScene");
+        this.necromancer = this.scene.launch("NecromancerScene");
+	 	//this.cameras.main.startFollow(this.player);
+
+
         this.physics.add.overlap(this.player, this.skeleton, this.player.hit);
 	}
 

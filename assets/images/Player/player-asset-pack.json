@@ -101,6 +101,11 @@
                 "key": "27_sword_miss_1"
             },
             {
+                "url": "Player.js",
+                "type": "script",
+                "key": "Player"
+            },
+            {
                 "url": "player_animations.json",
                 "type": "animation",
                 "key": "player_animations"

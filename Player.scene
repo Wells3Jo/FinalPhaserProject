@@ -39,6 +39,15 @@
             "body.height": 39,
             "body.offset.x": 43,
             "body.offset.y": 40
+        },
+        {
+            "type": "Text",
+            "id": "c30a3933-7efc-41b1-a198-1f8ff083a0bf",
+            "label": "health",
+            "x": 12,
+            "y": 4,
+            "text": "Health: 20",
+            "fontSize": "10"
         }
     ],
     "plainObjects": [

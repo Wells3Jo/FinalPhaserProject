@@ -1,6 +1,5 @@
-
-// You can write more code here
-	let isRunning = true;
+// You can write more code hereisrunn$0
+	let isRunnin = true;
 	let isRolling = true;
 	let isJumping = true;
 	let isAttacking = true;
@@ -56,6 +55,11 @@ class Player extends Phaser.Scene {
 		player.body.setSize(23, 39, false);
 		player.play("player_Idle");
 
+		// health
+		const health = this.add.text(12, 4, "", {});
+		health.text = "Health: 20";
+		health.setStyle({ "fontSize": "10" });
+
 		this.player = player;
 		this.attack = attack;
 		this.left = left;
@@ -105,12 +109,12 @@ class Player extends Phaser.Scene {
 		}
 
 		if (this.right.isDown){
-			if (isRunning) {
+			if (isRunnin) {
 				this.player.setVelocityX(150);
 				this.player.play("player_Run");
 				this.player.setFlipX(false);
 				this.player.body.setOffset(44,43);
-				isRunning = false;
+				isRunnin = false;
 				this.playerWalk.play();
 				if (this.player.body.onFloor){
 					this.playerWalk.play();
@@ -118,30 +122,30 @@ class Player extends Phaser.Scene {
 
 			} else 
 			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-				isRunning = true;
+				isRunnin = true;
 			})
 
 		}
 		else if (this.left.isDown) {
-			if (isRunning) {
+			if (isRunnin) {
 				this.player.setVelocityX(-150);
 				this.player.play("player_Run");
 				this.player.setFlipX(true);
 				this.player.body.setOffset(53,43);
-				isRunning = false;
+				isRunnin = false;
 				if (this.player.body.onFloor){
 					this.playerWalk.play();
 				}
 
 			} else 
 			this.player.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-				isRunning = true;
+				isRunnin = true;
 			})
 		}
 		else {
 			this.player.setVelocityX(0);
 
-			isRunning = true;
+			isRunnin = true;
 		}
 
 		if (this.roll.isDown && this.right.isDown && this.player.body.onFloor()){

@@ -10,7 +10,7 @@ var config = {
     title: "Fantasy Survivors",
     parent: "gameContainer",
     backgroundColor: 0x000000,
-    scene: [MenuScene, GameScene, Player, SkeletonScene],
+    scene: [MenuScene, GameScene, Player, SkeletonScene, NecromancerScene],
     pixelArt: true,
   // 1.1 set the physics to arcade
   physics: {

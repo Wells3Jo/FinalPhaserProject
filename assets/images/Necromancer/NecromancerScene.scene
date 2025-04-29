@@ -1,0 +1,47 @@
+{
+    "id": "bbc0c524-1e20-43d1-a344-59389d32c3b3",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [
+            "FinalPhaserProjectJoelWells/assets/images/Necromancer/asset-pack-necromancer.json"
+        ],
+        "createMethodName": "editorCreate",
+        "sceneKey": "NecromancerScene",
+        "borderWidth": 400,
+        "borderHeight": 270
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "1d7170a5-d0b1-406b-9588-e61918604581",
+            "label": "necromancer",
+            "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 160,
+            "hitArea.height": 128,
+            "texture": {
+                "key": "Necromancer_creativekind-Sheet",
+                "frame": 0
+            },
+            "x": 349,
+            "y": 18,
+            "flipX": true,
+            "animationPlayMethod": 1,
+            "animationKey": "idle_Necromancer",
+            "allowGravity": false,
+            "collideWorldBounds": true,
+            "none": true,
+            "body.width": 60,
+            "body.height": 60,
+            "body.offset.x": 50,
+            "body.offset.y": 55
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/Necromancer/animations-necromancer.json",
+                "type": "animation",
+                "key": "animations-necromancer"
+            },
+            {
+                "url": "assets/images/Necromancer/Necromancer_creativekind-Sheet.png",
+                "frameConfig": {
+                    "frameWidth": 160,
+                    "frameHeight": 128,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Necromancer_creativekind-Sheet"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
+    }
+}

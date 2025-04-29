@@ -3,7 +3,9 @@
     "sceneType": "SCENE",
     "settings": {
         "preloadPackFiles": [
-            "FinalPhaserProjectJoelWells/asset-pack-level-1.json"
+            "FinalPhaserProjectJoelWells/asset-pack-level-1.json",
+            "FinalPhaserProjectJoelWells/assets/images/Skeleton/asset-pack-skeleton.json",
+            "FinalPhaserProjectJoelWells/assets/images/Player/player-asset-pack.json"
         ],
         "createMethodName": "editorCreate",
         "sceneKey": "GameScene",
@@ -67,27 +69,6 @@
             "y": 136,
             "scaleY": 0.7,
             "flipY": true
-        },
-        {
-            "type": "Text",
-            "id": "78b8fd68-4e23-45d3-91df-85cb1136eb3b",
-            "label": "health",
-            "x": 15,
-            "y": 11,
-            "text": "Health: 20"
-        },
-        {
-            "type": "ArcadeSprite",
-            "id": "46e9d71f-dd22-4d10-bcc0-9e3aa431a55f",
-            "label": "arcadesprite_1",
-            "texture": {
-                "key": "Idle",
-                "frame": 0
-            },
-            "x": 331,
-            "y": 195,
-            "body.width": 150,
-            "body.height": 150
         }
     ],
     "plainObjects": [],
